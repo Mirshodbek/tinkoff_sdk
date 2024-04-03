@@ -296,7 +296,7 @@ class TinkoffSdkPlugin :
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK && result!= null) {
             val json =
                     JSONObject(mapOf("success" to true, "isError" to false, "message" to "Success"))
                             .toString()
