@@ -50,6 +50,7 @@ dependencies {
     def appcompat_version = "1.6.1"
 
     implementation 'androidx.core:core-ktx:1.9.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     // Tinkoff SDK
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "ru.tinkoff.acquiring:ui:3.0.2"
