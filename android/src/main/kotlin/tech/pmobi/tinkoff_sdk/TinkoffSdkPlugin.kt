@@ -301,7 +301,7 @@ class TinkoffSdkPlugin :
                     JSONObject(mapOf("success" to true, "isError" to false, "message" to "Success"))
                             .toString()
             result!!.success(json)
-        } else if (resultCode == Activity.RESULT_CANCELED) {
+        } else if (resultCode == Activity.RESULT_CANCELED && result!= null) {
             val json =
                     JSONObject(
                                     mapOf(
